@@ -437,6 +437,10 @@
     name: Running*
   steps:
     - velocity: Right Knee Angles => kneeAngleVel
+    - lowpass: $prev
+      extrapolate: 100
+      order: 6
+      cutoff: 20
 
 # ---
 
