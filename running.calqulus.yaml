@@ -436,7 +436,7 @@
   where:
     name: Running*
   steps:
-    - velocity: Right Knee Angles => kneeAngleVel
+    - velocity: Right Knee Angles
     - lowpass: $prev
       extrapolate: 100
       order: 6
